@@ -32,7 +32,7 @@ alter table A_Parents_Children disable constraint A_Parents_Children_PK;
 alter table A_Person disable constraint A_Person_PK;
 alter table A_Project disable constraint A_Project_PK;
 
-alter table A_Employees_Project disable constraint A_Emps_Projs_A_Person_FK;
+alter table A_Employees_Projects disable constraint A_Emps_Projs_A_Person_FK;
 alter table A_Employees_Projects_PK disable constraint A_Emps_Projs_A_Project_FK;
 alter table A_Parents_Children disable constraint A_Par_Chi_A_Person_FK;
 alter table A_Parents_Children disable constraint A_Par_Chi_A_Person_FKv1;
@@ -112,20 +112,20 @@ alter trigger A_Interim_Manager_trigger  enable;
 alter trigger A_Current_Project_trigger  enable;
 alter trigger A_Previous_Project_trigger  enable;
 
-alter primary key A_Department_PK enable;
-alter primary key A_Employees_Projects_PK enable;
-alter primary key A_Parents_Children_PK enable;
-alter primary key A_Person_PK enable;
-alter primary key A_Project_PK enable;
 
+alter table A_Department enable constraint A_Department_PK;
+alter table A_Employees_Projects enable constraint A_Employees_Projects_PK;
+alter table A_Parents_Children enable constraint A_Parents_Children_PK;
+alter table A_Person enable constraint A_Person_PK;
+alter table A_Project enable constraint A_Project_PK;
 
-alter foreign key A_Person_person_id enable;
-alter foreign key A_Project_project_no enable;
-alter foreign key A_Person_person_id enable;
-alter foreign key A_Person_person_id2 enable;
-alter foreign key A_Department_dept_no enable;
-alter foreign key A_Person_person_id enable;
-alter foreign key A_Person_person_id2 enable;
-alter foreign key A_Department_dept_no enable;
-alter foreign key A_Person_person_id enable;
-alter foreign key A_Project_project_no enable;
+alter table A_Employees_Projects enable constraint A_Emps_Projs_A_Person_FK;
+alter table A_Employees_Projects_PK enable constraint A_Emps_Projs_A_Project_FK;
+alter table A_Parents_Children enable constraint A_Par_Chi_A_Person_FK;
+alter table A_Parents_Children enable constraint A_Par_Chi_A_Person_FKv1;
+alter table A_Person enable constraint A_Person_A_Department_FK;
+alter table A_Person enable constraint A_Person_A_Person_FK;
+alter table A_Person enable constraint A_Person_A_Person_FKv2;
+alter table A_Project enable constraint A_Project_A_Department_FK;
+alter table A_Project enable constraint A_Project_A_Person_FK;
+alter table A_Project enable constraint A_Project_A_Project_FK;
