@@ -1,2 +1,1 @@
-# projectA
-CS 347
+# S16C4_Project
