@@ -12,7 +12,7 @@ alter table A_Project disable constraint A_Project_A_Department_FK;
 alter table A_Project disable constraint A_Project_A_Person_FK;
 alter table A_Project disable constraint A_Project_A_Project_FK;
 
-truncate table A_Department; 
+truncate table A_Department;
 truncate table A_Person;
 truncate table A_Project;
 
@@ -50,45 +50,41 @@ INSERT INTO A_Department(dept_no, dept_name) VALUES (3, 'Dept3');
 INSERT INTO A_Department(dept_no, dept_name) VALUES (4, 'Dept4');
 INSERT INTO A_Department(dept_no, dept_name) VALUES (5, 'Dept5');
 
-INSERT INTO A_Employees_Projects(employees_projects_id, A_Person_person_id, A_Project_project_no) 
-VALUES (1, 1, 1);
-INSERT INTO A_Employees_Projects(employees_projects_id, A_Person_person_id, A_Project_project_no) 
-VALUES (2, 2, 2);
-INSERT INTO A_Employees_Projects(employees_projects_id, A_Person_person_id, A_Project_project_no) 
-VALUES (3, 3, 3);
+INSERT INTO A_Employees_Projects(employees_projects_id, A_Person_person_id, A_Project_project_no)
+VALUES (1, 6, 1);
 
-INSERT INTO A_Parents_Children(parents_children_id, A_Person_person_id, A_Person_person_id2) 
+INSERT INTO A_Parents_Children(parents_children_id, A_Person_person_id, A_Person_person_id2)
 VALUES (11, 1, 3);
-INSERT INTO A_Parents_Children(parents_children_id, A_Person_person_id, A_Person_person_id2) 
+INSERT INTO A_Parents_Children(parents_children_id, A_Person_person_id, A_Person_person_id2)
 VALUES (12, 1, 4);
-INSERT INTO A_Parents_Children(parents_children_id, A_Person_person_id, A_Person_person_id2) 
+INSERT INTO A_Parents_Children(parents_children_id, A_Person_person_id, A_Person_person_id2)
 VALUES (21, 2, 3);
-INSERT INTO A_Parents_Children(parents_children_id, A_Person_person_id, A_Person_person_id2) 
+INSERT INTO A_Parents_Children(parents_children_id, A_Person_person_id, A_Person_person_id2)
 VALUES (22, 2, 4);
 
 INSERT INTO A_Person(person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, is_fired, salary, employee_id, salary_exception, bonus, type, A_Person_person_id, A_Person_person_id2, A_Department_dept_no)
-VALUES (1, 'Name1', 'Surname1', 'Somewhere', 11111, 111, 'Y', 'N', 100000, 2, 'Y', 10000, 'bonus1', null, 2, 1);
+VALUES (1, 'Name1', 'Surname1', 'Somewhere', 11111, 111, 1, 0, 100000, 2, 1, 10000, 'Person', null, 2, 1);
 INSERT INTO A_Person(person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, is_fired, salary, employee_id, salary_exception, bonus, type, A_Person_person_id, A_Person_person_id2, A_Department_dept_no)
-VALUES (2, 'Name2', 'Surname1', 'Somewhere', 22222, 222, 'N', 'N', 200000, 1, 'N', 20000, 'bonus2', 6, 1, 2);
+VALUES (2, 'Name2', 'Surname1', 'Somewhere', 22222, 222, 0, 0, 200000, 1, 0, 20000, 'Employee', 6, 1, 2);
 INSERT INTO A_Person(person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, is_fired, salary, employee_id, salary_exception, bonus, type, A_Person_person_id, A_Person_person_id2, A_Department_dept_no)
-VALUES (3, 'Name3', 'Surname1', 'Somewhere', 33333, 333, 'Y', 'N', 30000, 3, 'Y', 3000, 'bonus3', 1, null, 1);
+VALUES (3, 'Name3', 'Surname1', 'Somewhere', 33333, 333, 1, 0, 30000, 3, 1, 3000, 'Manager', 1, null, 1);
 INSERT INTO A_Person(person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, is_fired, salary, employee_id, salary_exception, bonus, type, A_Person_person_id, A_Person_person_id2, A_Department_dept_no)
-VALUES (4, 'Name4', 'Surname1', 'Somewhere', 44444, 444, 'Y', 'Y', 4000, 4, 'N', 400, 'bonus4', null, null, null);
+VALUES (4, 'Name4', 'Surname1', 'Somewhere', 44444, 444, 1, 1, 4000, 4, 0, 400, 'President', null, null, null);
 INSERT INTO A_Person(person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, is_fired, salary, employee_id, salary_exception, bonus, type, A_Person_person_id, A_Person_person_id2, A_Department_dept_no)
-VALUES (5, 'Name5', 'Surname2', 'Here', 55555, 555, 'N', 'Y', 5000, 5, 'Y', 500, 'bonus5', null, null, 4);
+VALUES (5, 'Name5', 'Surname2', 'Here', 55555, 555, 0, 1, 5000, 5, 1, 500, 'Interim Manager', null, null, 4);
 INSERT INTO A_Person(person_id, first_name, last_name, home_address, zipcode, home_phone, us_citizen, is_fired, salary, employee_id, salary_exception, bonus, type, A_Person_person_id, A_Person_person_id2, A_Department_dept_no)
-VALUES (6, 'Name6', 'Surname3', 'There', 66666, 666, 'Y', 'N', 60000, 6, 'N', 6000, 'bonus6', null, null, 5);
+VALUES (6, 'Name6', 'Surname3', 'There', 66666, 666, 1, 0, 60000, 6, 0, 6000, 'Project Employee', null, null, 5);
 
 INSERT INTO A_Project(project_no, project_title, project_active, end_date, est_person_hours, type, A_Person_person_id, A_Project_project_no, A_Department_dept_no)
-VALUES (1, 'Proj1', 'Y', TO_DATE('2111/01/01', 'yyyy/mm/dd'), 111, 'a', 1, null, 1);
+VALUES (1, 'Proj1', 1, TO_DATE('2111/01/01', 'yyyy/mm/dd'), 111, 'Current Project', 3, null, 1);
 INSERT INTO A_Project(project_no, project_title, project_active, end_date, est_person_hours, type, A_Person_person_id, A_Project_project_no, A_Department_dept_no)
-VALUES (2, 'Proj2', 'Y', TO_DATE('2022/02/02', 'yyyy/mm/dd'), 222, 'b', 1, 1, 1);
+VALUES (2, 'Proj2', 1, TO_DATE('2022/02/02', 'yyyy/mm/dd'), 222, 'Current Project', 3, 1, 1);
 INSERT INTO A_Project(project_no, project_title, project_active, end_date, est_person_hours, type, A_Person_person_id, A_Project_project_no, A_Department_dept_no)
-VALUES (3, 'Proj3', 'N', TO_DATE('2033/03/03', 'yyyy/mm/dd'), 333, 'c', 1, 2, 1);
+VALUES (3, 'Proj3', 0, TO_DATE('2033/03/03', 'yyyy/mm/dd'), 333, 'Current Project', 4, 2, 1);
 INSERT INTO A_Project(project_no, project_title, project_active, end_date, est_person_hours, type, A_Person_person_id, A_Project_project_no, A_Department_dept_no)
-VALUES (4, 'Proj4', 'Y', TO_DATE('2044/04/04', 'yyyy/mm/dd'), 444, 'd', 6, 5, 5);
+VALUES (4, 'Proj4', 1, TO_DATE('2044/04/04', 'yyyy/mm/dd'), 444, 'Previous Project', 4, 5, 5);
 INSERT INTO A_Project(project_no, project_title, project_active, end_date, est_person_hours, type, A_Person_person_id, A_Project_project_no, A_Department_dept_no)
-VALUES (5, 'Proj5', 'Y', TO_DATE('2055/05/05', 'yyyy/mm/dd'), 555, 'e', 6, null, 5);
+VALUES (5, 'Proj5', 1, TO_DATE('2055/05/05', 'yyyy/mm/dd'), 555, 'Previous Project', 3, null, 5);
 
 
 alter trigger A_Department_PK_trig enable;
