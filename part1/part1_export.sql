@@ -27,7 +27,7 @@ prompt APPLICATION 56710 - Project
 -- Application Export:
 --   Application:     56710
 --   Name:            Project
---   Date and Time:   01:54 Thursday April 28, 2016
+--   Date and Time:   19:34 Thursday April 28, 2016
 --   Exported By:     CTLENTE@GMAIL.COM
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -41,7 +41,7 @@ prompt APPLICATION 56710 - Project
 --     Validations:              6
 --     Processes:               38
 --     Regions:                 21
---     Buttons:                 49
+--     Buttons:                 43
 --     Dynamic Actions:         22
 --   Shared Components:
 --     Logic:
@@ -108,7 +108,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160428015319'
+,p_last_upd_yyyymmddhh24miss=>'20160428193341'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -7711,7 +7711,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160420174445'
+,p_last_upd_yyyymmddhh24miss=>'20160428191456'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(26070741217682157625)
@@ -7935,7 +7935,9 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'C'
 ,p_column_label=>'Project Active'
 ,p_column_type=>'STRING'
-,p_tz_dependent=>'N'
+,p_display_text_as=>'LOV_ESCAPE_SC'
+,p_rpt_named_lov=>wwv_flow_api.id(28809149335978129006)
+,p_rpt_show_filter_lov=>'1'
 );
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(30880954263052010665)
@@ -11297,7 +11299,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160420200513'
+,p_last_upd_yyyymmddhh24miss=>'20160428193341'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30962425414819503477)
@@ -11369,30 +11371,6 @@ wwv_flow_api.create_page_button(
 ,p_button_condition=>'P15_PROJECT_NO'
 ,p_button_condition_type=>'ITEM_IS_NOT_NULL'
 ,p_database_action=>'DELETE'
-);
-wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(30962425813811503480)
-,p_button_sequence=>20
-,p_button_plug_id=>wwv_flow_api.id(30962425414819503477)
-,p_button_name=>'PERSON'
-,p_button_action=>'REDIRECT_PAGE'
-,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_api.id(28803788383530423533)
-,p_button_image_alt=>'New Person'
-,p_button_position=>'REGION_TEMPLATE_HELP'
-,p_button_redirect_url=>'f?p=&APP_ID.:16:&SESSION.::&DEBUG.:RP:P16_PREV_PAGE:8'
-);
-wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(30962426279360503481)
-,p_button_sequence=>30
-,p_button_plug_id=>wwv_flow_api.id(30962425414819503477)
-,p_button_name=>'DEPARTMENT'
-,p_button_action=>'REDIRECT_PAGE'
-,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_api.id(28803788383530423533)
-,p_button_image_alt=>'New Department'
-,p_button_position=>'REGION_TEMPLATE_HELP'
-,p_button_redirect_url=>'f?p=&APP_ID.:17:&SESSION.::&DEBUG.:RP:P17_PREV_PAGE:8'
 );
 wwv_flow_api.create_page_branch(
  p_id=>wwv_flow_api.id(30962437594785503503)
@@ -11777,7 +11755,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160420200616'
+,p_last_upd_yyyymmddhh24miss=>'20160428193331'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30962494483557511427)
@@ -11849,36 +11827,6 @@ wwv_flow_api.create_page_button(
 ,p_button_condition=>'P16_PERSON_ID'
 ,p_button_condition_type=>'ITEM_IS_NOT_NULL'
 ,p_database_action=>'DELETE'
-);
-wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(30962496480404511430)
-,p_button_sequence=>20
-,p_button_plug_id=>wwv_flow_api.id(30962494483557511427)
-,p_button_name=>'DEPARTMENT'
-,p_button_action=>'REDIRECT_PAGE'
-,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_api.id(28803788383530423533)
-,p_button_image_alt=>'New Department'
-,p_button_position=>'REGION_TEMPLATE_HELP'
-,p_button_redirect_url=>'f?p=&APP_ID.:17:&SESSION.::&DEBUG.:RP:P17_PREV_PAGE:11'
-,p_grid_new_grid=>false
-,p_grid_new_row=>'N'
-,p_grid_new_column=>'N'
-);
-wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(30962496761688511431)
-,p_button_sequence=>30
-,p_button_plug_id=>wwv_flow_api.id(30962494483557511427)
-,p_button_name=>'PROJECT'
-,p_button_action=>'REDIRECT_PAGE'
-,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_api.id(28803788383530423533)
-,p_button_image_alt=>'New Project'
-,p_button_position=>'REGION_TEMPLATE_HELP'
-,p_button_redirect_url=>'f?p=&APP_ID.:15:&SESSION.::&DEBUG.:RP:P15_PREV_PAGE:11'
-,p_grid_new_grid=>false
-,p_grid_new_row=>'N'
-,p_grid_new_column=>'N'
 );
 wwv_flow_api.create_page_branch(
  p_id=>wwv_flow_api.id(30962520670491511458)
@@ -12723,7 +12671,7 @@ begin
 wwv_flow_api.create_page(
  p_id=>17
 ,p_user_interface_id=>wwv_flow_api.id(28803793507480423543)
-,p_name=>'Form on Department'
+,p_name=>'Form on Department (modal)'
 ,p_page_mode=>'MODAL'
 ,p_step_title=>'Form on Department'
 ,p_step_sub_title=>'Form on Department'
@@ -12738,7 +12686,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160420200807'
+,p_last_upd_yyyymmddhh24miss=>'20160428193317'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30962696109049522128)
@@ -12810,30 +12758,6 @@ wwv_flow_api.create_page_button(
 ,p_button_condition=>'P17_DEPT_NO'
 ,p_button_condition_type=>'ITEM_IS_NOT_NULL'
 ,p_database_action=>'DELETE'
-);
-wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(30962696572329522129)
-,p_button_sequence=>10
-,p_button_plug_id=>wwv_flow_api.id(30962696109049522128)
-,p_button_name=>'PERSON'
-,p_button_action=>'REDIRECT_PAGE'
-,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_api.id(28803788383530423533)
-,p_button_image_alt=>'New Person'
-,p_button_position=>'REGION_TEMPLATE_HELP'
-,p_button_redirect_url=>'f?p=&APP_ID.:16:&SESSION.::&DEBUG.:RP:P16_PREV_PAGE:14'
-);
-wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(30962696957223522129)
-,p_button_sequence=>20
-,p_button_plug_id=>wwv_flow_api.id(30962696109049522128)
-,p_button_name=>'PROJECT'
-,p_button_action=>'REDIRECT_PAGE'
-,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_api.id(28803788383530423533)
-,p_button_image_alt=>'New Project'
-,p_button_position=>'REGION_TEMPLATE_HELP'
-,p_button_redirect_url=>'f?p=&APP_ID.:15:&SESSION.::&DEBUG.:RP:P15_PREV_PAGE:14'
 );
 wwv_flow_api.create_page_branch(
  p_id=>wwv_flow_api.id(30962713044948522139)
@@ -13036,7 +12960,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160428015319'
+,p_last_upd_yyyymmddhh24miss=>'20160428185720'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30963061740318164770)
@@ -13089,6 +13013,9 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'B'
 ,p_column_label=>'Child'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'LOV_ESCAPE_SC'
+,p_rpt_named_lov=>wwv_flow_api.id(28806689163570915900)
+,p_rpt_show_filter_lov=>'1'
 );
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(30963063025224164773)
@@ -13097,6 +13024,9 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'C'
 ,p_column_label=>'Parent'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'LOV_ESCAPE_SC'
+,p_rpt_named_lov=>wwv_flow_api.id(28806689163570915900)
+,p_rpt_show_filter_lov=>'1'
 );
 wwv_flow_api.create_worksheet_rpt(
  p_id=>wwv_flow_api.id(30963656359551215878)
@@ -13111,16 +13041,15 @@ wwv_flow_api.create_worksheet_rpt(
 );
 wwv_flow_api.create_page_button(
  p_id=>wwv_flow_api.id(30963063417226164774)
-,p_button_sequence=>30
+,p_button_sequence=>10
 ,p_button_plug_id=>wwv_flow_api.id(30963061740318164770)
 ,p_button_name=>'CREATE'
 ,p_button_action=>'REDIRECT_PAGE'
 ,p_button_template_options=>'#DEFAULT#'
 ,p_button_template_id=>wwv_flow_api.id(28803788383530423533)
 ,p_button_image_alt=>'Create'
-,p_button_position=>'RIGHT_OF_IR_SEARCH_BAR'
+,p_button_position=>'REGION_TEMPLATE_PREVIOUS'
 ,p_button_redirect_url=>'f?p=&APP_ID.:22:&SESSION.::&DEBUG.:22'
-,p_grid_new_grid=>false
 );
 end;
 /
@@ -13400,8 +13329,8 @@ wwv_flow_api.create_page(
 ,p_page_is_public_y_n=>'N'
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
-,p_last_updated_by=>'APEX_PUBLIC_USER'
-,p_last_upd_yyyymmddhh24miss=>'20160420223209'
+,p_last_updated_by=>'CTLENTE@GMAIL.COM'
+,p_last_upd_yyyymmddhh24miss=>'20160428185710'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30964036968052282084)
@@ -13455,6 +13384,9 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'B'
 ,p_column_label=>'Employee'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'LOV_ESCAPE_SC'
+,p_rpt_named_lov=>wwv_flow_api.id(30963782325580632211)
+,p_rpt_show_filter_lov=>'1'
 );
 wwv_flow_api.create_worksheet_column(
  p_id=>wwv_flow_api.id(30964048207172282087)
@@ -13463,6 +13395,9 @@ wwv_flow_api.create_worksheet_column(
 ,p_column_identifier=>'C'
 ,p_column_label=>'Project'
 ,p_column_type=>'NUMBER'
+,p_display_text_as=>'LOV_ESCAPE_SC'
+,p_rpt_named_lov=>wwv_flow_api.id(30963918078904638790)
+,p_rpt_show_filter_lov=>'1'
 );
 wwv_flow_api.create_worksheet_rpt(
  p_id=>wwv_flow_api.id(30967656635012012423)
@@ -13477,16 +13412,15 @@ wwv_flow_api.create_worksheet_rpt(
 );
 wwv_flow_api.create_page_button(
  p_id=>wwv_flow_api.id(30964048677398282087)
-,p_button_sequence=>30
+,p_button_sequence=>10
 ,p_button_plug_id=>wwv_flow_api.id(30964036968052282084)
 ,p_button_name=>'CREATE'
 ,p_button_action=>'REDIRECT_PAGE'
 ,p_button_template_options=>'#DEFAULT#'
 ,p_button_template_id=>wwv_flow_api.id(28803788383530423533)
 ,p_button_image_alt=>'Create'
-,p_button_position=>'RIGHT_OF_IR_SEARCH_BAR'
+,p_button_position=>'REGION_TEMPLATE_PREVIOUS'
 ,p_button_redirect_url=>'f?p=&APP_ID.:24:&SESSION.::&DEBUG.:24'
-,p_grid_new_grid=>false
 );
 end;
 /
