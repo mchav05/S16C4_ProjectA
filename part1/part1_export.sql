@@ -27,7 +27,7 @@ prompt APPLICATION 56710 - Project
 -- Application Export:
 --   Application:     56710
 --   Name:            Project
---   Date and Time:   19:34 Thursday April 28, 2016
+--   Date and Time:   20:40 Thursday April 28, 2016
 --   Exported By:     CTLENTE@GMAIL.COM
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -108,7 +108,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160428193341'
+,p_last_upd_yyyymmddhh24miss=>'20160428204032'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_ui_type_name => null
 );
@@ -282,7 +282,7 @@ wwv_flow_api.create_list_of_values(
 wwv_flow_api.create_list_of_values(
  p_id=>wwv_flow_api.id(28807023763761973348)
 ,p_lov_name=>'LIST OF MANAGER'
-,p_lov_query=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''InterimManager'''
+,p_lov_query=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''Interim Manager'''
 );
 wwv_flow_api.create_list_of_values(
  p_id=>wwv_flow_api.id(28806689163570915900)
@@ -8026,7 +8026,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160420190938'
+,p_last_upd_yyyymmddhh24miss=>'20160428204032'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30880943071452010551)
@@ -8257,7 +8257,7 @@ wwv_flow_api.create_page_item(
 ,p_source_type=>'DB_COLUMN'
 ,p_display_as=>'NATIVE_SELECT_LIST'
 ,p_named_lov=>'LIST OF MANAGER'
-,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''InterimManager'''
+,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''Interim Manager'''
 ,p_lov_display_null=>'YES'
 ,p_cHeight=>1
 ,p_field_template=>wwv_flow_api.id(28803787839438423532)
@@ -9940,7 +9940,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160420194545'
+,p_last_upd_yyyymmddhh24miss=>'20160428204032'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30882535862861774602)
@@ -10313,7 +10313,7 @@ wwv_flow_api.create_page_item(
 ,p_source_type=>'DB_COLUMN'
 ,p_display_as=>'NATIVE_SELECT_LIST'
 ,p_named_lov=>'LIST OF MANAGER'
-,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''InterimManager'''
+,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''Interim Manager'''
 ,p_lov_display_null=>'YES'
 ,p_cHeight=>1
 ,p_field_template=>wwv_flow_api.id(28803787839438423532)
@@ -10997,7 +10997,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160420190914'
+,p_last_upd_yyyymmddhh24miss=>'20160428204032'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30944335042204155109)
@@ -11149,7 +11149,7 @@ wwv_flow_api.create_page_item(
 ,p_prompt=>'Managers'
 ,p_display_as=>'NATIVE_LIST_MANAGER'
 ,p_named_lov=>'LIST OF MANAGER'
-,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''InterimManager'''
+,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''Interim Manager'''
 ,p_cSize=>30
 ,p_cMaxlength=>4000
 ,p_cHeight=>10
@@ -11299,7 +11299,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160428193341'
+,p_last_upd_yyyymmddhh24miss=>'20160428204032'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30962425414819503477)
@@ -11506,7 +11506,7 @@ wwv_flow_api.create_page_item(
 ,p_source_type=>'DB_COLUMN'
 ,p_display_as=>'NATIVE_SELECT_LIST'
 ,p_named_lov=>'LIST OF MANAGER'
-,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''InterimManager'''
+,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''Interim Manager'''
 ,p_lov_display_null=>'YES'
 ,p_cHeight=>1
 ,p_field_template=>wwv_flow_api.id(28803787839438423532)
@@ -11755,7 +11755,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160428193331'
+,p_last_upd_yyyymmddhh24miss=>'20160428204032'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30962494483557511427)
@@ -12098,7 +12098,7 @@ wwv_flow_api.create_page_item(
 ,p_source_type=>'DB_COLUMN'
 ,p_display_as=>'NATIVE_SELECT_LIST'
 ,p_named_lov=>'LIST OF MANAGER'
-,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''InterimManager'''
+,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''Interim Manager'''
 ,p_lov_display_null=>'YES'
 ,p_cHeight=>1
 ,p_field_template=>wwv_flow_api.id(28803787839438423532)
@@ -12686,7 +12686,7 @@ wwv_flow_api.create_page(
 ,p_cache_timeout_seconds=>21600
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'CTLENTE@GMAIL.COM'
-,p_last_upd_yyyymmddhh24miss=>'20160428193317'
+,p_last_upd_yyyymmddhh24miss=>'20160428204032'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(30962696109049522128)
@@ -12814,7 +12814,7 @@ wwv_flow_api.create_page_item(
 ,p_prompt=>'Managers'
 ,p_display_as=>'NATIVE_LIST_MANAGER'
 ,p_named_lov=>'LIST OF MANAGER'
-,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''InterimManager'''
+,p_lov=>'SELECT (first_name || '' '' || last_name), person_id FROM a_person WHERE type = ''Manager'' OR type = ''President'' OR type = ''Interim Manager'''
 ,p_cSize=>30
 ,p_cMaxlength=>4000
 ,p_cHeight=>10
