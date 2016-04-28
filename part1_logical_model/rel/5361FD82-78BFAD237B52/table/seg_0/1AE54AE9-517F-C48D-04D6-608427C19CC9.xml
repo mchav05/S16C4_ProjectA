@@ -8,23 +8,11 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="department_id" id="96E151FF-C498-8F64-173B-4F56A94993DA">
-<createdBy>ctlente</createdBy>
-<createdTime>2016-03-26 02:03:35 UTC</createdTime>
-<generatorID>1014935A-290D-8A1A-71E7-2006990A868E</generatorID>
-<ownerDesignName>part1_logical_model</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 <Column name="dept_no" id="3D160073-8A71-02B0-5C7A-5400E424FF3B">
 <createdBy>ctlente</createdBy>
 <createdTime>2016-03-26 02:03:35 UTC</createdTime>
 <generatorID>DC48775C-3F1C-5E94-B2EB-2D7B2A04B86F</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -36,7 +24,6 @@
 <createdTime>2016-03-26 02:03:35 UTC</createdTime>
 <generatorID>F37661AF-A506-CE01-9E76-381DF86C3282</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -55,7 +42,7 @@
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="96E151FF-C498-8F64-173B-4F56A94993DA"/>
+<colUsage columnID="3D160073-8A71-02B0-5C7A-5400E424FF3B"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

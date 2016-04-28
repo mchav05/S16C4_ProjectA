@@ -34,7 +34,6 @@
 <engineerTo>
 <item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -48,7 +47,6 @@
 <engineerTo>
 <item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -102,7 +100,6 @@
 <engineerTo>
 <item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -130,7 +127,6 @@
 <engineerTo>
 <item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -143,7 +139,6 @@
 <engineerTo>
 <item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -220,16 +215,16 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="department_id" id="3C99CD40-C278-F5D8-163F-2DCFC65B4D6C">
+<Attribute name="dept_no" id="FBB2D01A-9590-F7CB-E91F-889F0B9E79C4">
 <createdBy>ctlente</createdBy>
-<createdTime>2016-03-26 02:01:08 UTC</createdTime>
+<createdTime>2016-03-28 01:50:09 UTC</createdTime>
 <generatorID>F95390C3-6258-F200-239D-4BBB6647F2F1</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
 <engineerTo>
 <item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>1014935A-290D-8A1A-71E7-2006990A868E</referedAttribute>
+<referedAttribute>DC48775C-3F1C-5E94-B2EB-2D7B2A04B86F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

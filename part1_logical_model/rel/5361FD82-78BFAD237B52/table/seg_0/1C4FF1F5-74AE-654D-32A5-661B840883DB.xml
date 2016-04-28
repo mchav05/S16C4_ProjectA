@@ -65,7 +65,7 @@
 <colUsage columnID="B3DB8BA4-1C83-0C86-63C8-C8FA68DBD5AB"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="177D7571-1198-ADB8-ED17-6EB088986207" name="A_Pars_Chis_A_Person_FK">
+<ind_PK_UK id="177D7571-1198-ADB8-ED17-6EB088986207" name="A_Par_Chi_A_Person_FK">
 <createdBy>ctlente</createdBy>
 <createdTime>2016-03-26 02:03:35 UTC</createdTime>
 <generatorID>224DB0A7-D14C-CF64-E55D-FC8C1D01CD5A</generatorID>
@@ -76,7 +76,7 @@
 <colUsage columnID="2A2B37B6-5D65-B4AF-F393-CC3055D00009"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7C091AE0-E09E-487C-D0A9-E3C317DA975D" name="A_Pars_Chis_A_Person_FKv1">
+<ind_PK_UK id="7C091AE0-E09E-487C-D0A9-E3C317DA975D" name="A_Par_Chi_A_Person_FKv1">
 <createdBy>ctlente</createdBy>
 <createdTime>2016-03-26 02:03:35 UTC</createdTime>
 <generatorID>52886CEB-E2D3-3A20-FD34-09C1B1074939</generatorID>

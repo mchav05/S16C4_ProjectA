@@ -15,18 +15,6 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="department_id" id="1014935A-290D-8A1A-71E7-2006990A868E">
-<createdBy>ctlente</createdBy>
-<createdTime>2016-03-26 01:56:25 UTC</createdTime>
-<ownerDesignName>part1_logical_model</ownerDesignName>
-<engineerTo>
-<item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="dept_no" id="DC48775C-3F1C-5E94-B2EB-2D7B2A04B86F">
 <createdBy>ctlente</createdBy>
 <createdTime>2016-03-26 01:56:37 UTC</createdTime>
@@ -34,7 +22,6 @@
 <engineerTo>
 <item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -47,7 +34,6 @@
 <engineerTo>
 <item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -60,12 +46,13 @@
 <createdBy>ctlente</createdBy>
 <createdTime>2016-03-26 01:56:36 UTC</createdTime>
 <ownerDesignName>part1_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
+<item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>1014935A-290D-8A1A-71E7-2006990A868E</attributeRef>
+<attributeRef>DC48775C-3F1C-5E94-B2EB-2D7B2A04B86F</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

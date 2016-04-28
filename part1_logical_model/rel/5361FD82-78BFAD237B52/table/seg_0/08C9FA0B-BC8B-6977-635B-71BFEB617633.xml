@@ -24,7 +24,6 @@
 <createdTime>2016-03-26 02:03:35 UTC</createdTime>
 <generatorID>09C45A55-E9D8-8A29-D19E-5B0799F6359B</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -37,7 +36,6 @@
 <createdTime>2016-03-26 02:03:35 UTC</createdTime>
 <generatorID>3463665C-995E-30AD-9712-53A6D531B15B</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -87,7 +85,6 @@
 <createdTime>2016-03-26 02:03:35 UTC</createdTime>
 <generatorID>7D0070A7-528E-E081-A3A7-351D106BC551</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT006</logicalDatatype>
@@ -113,7 +110,6 @@
 <createdTime>2016-03-26 02:03:35 UTC</createdTime>
 <generatorID>87709BA8-0C7F-F209-FCF3-70A7A5D2FDD4</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -125,7 +121,6 @@
 <createdTime>2016-03-26 02:03:35 UTC</createdTime>
 <generatorID>F62E7E25-49EB-0131-AE1C-51B36885B0A0</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -202,10 +197,10 @@
 <colAssociation fkAssociation="928DF321-77B3-D0B6-5532-F79E411DA883" referredColumn="2B36EBDC-9340-7B53-7B69-A2998C3F07E7"/>
 </associations>
 </Column>
-<Column name="A_Department_department_id" id="325923AE-3BD1-A934-8F2F-3D2DFE065548">
+<Column name="A_Department_dept_no" id="B1DFEA6D-F4AA-86E8-71DA-97F15BB61613">
 <createdBy>ctlente</createdBy>
-<createdTime>2016-03-26 02:03:35 UTC</createdTime>
-<generatorID>3C99CD40-C278-F5D8-163F-2DCFC65B4D6C</generatorID>
+<createdTime>2016-03-28 01:50:24 UTC</createdTime>
+<generatorID>FBB2D01A-9590-F7CB-E91F-889F0B9E79C4</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -215,7 +210,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="2709CFCC-A1E2-A678-C2A5-826CA89357B1" referredColumn="96E151FF-C498-8F64-173B-4F56A94993DA"/>
+<colAssociation fkAssociation="2709CFCC-A1E2-A678-C2A5-826CA89357B1" referredColumn="3D160073-8A71-02B0-5C7A-5400E424FF3B"/>
 </associations>
 </Column>
 </columns>
@@ -273,7 +268,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="325923AE-3BD1-A934-8F2F-3D2DFE065548"/>
+<colUsage columnID="B1DFEA6D-F4AA-86E8-71DA-97F15BB61613"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -42,16 +42,16 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="project_id" id="4A9E1767-7703-9C2F-395D-780D38C265C1">
+<Attribute name="project_no" id="5DD1A2EE-67A1-1D53-75AB-0585B6AFED88">
 <createdBy>ctlente</createdBy>
-<createdTime>2016-03-26 02:00:31 UTC</createdTime>
+<createdTime>2016-03-28 01:46:25 UTC</createdTime>
 <generatorID>713BFDEF-B8E1-AF07-8B75-18BBEC6AB4D3</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
 <engineerTo>
 <item key="5361FD82-3EBA-EE18-71D8-78BFAD237B52" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>110FD97C-069B-E07C-6C98-3D6E58F7750C</referedAttribute>
+<referedAttribute>D2B9CCB8-350D-07E9-560A-D06734C29353</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

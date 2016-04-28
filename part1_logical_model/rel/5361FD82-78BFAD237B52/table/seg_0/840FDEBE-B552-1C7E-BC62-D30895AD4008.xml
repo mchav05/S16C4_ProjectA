@@ -35,10 +35,10 @@
 <colAssociation fkAssociation="3CD3497A-599A-D60F-50FB-FD63D08EC2BB" referredColumn="2B36EBDC-9340-7B53-7B69-A2998C3F07E7"/>
 </associations>
 </Column>
-<Column name="A_Project_project_id" id="DF641FF9-9897-E9BA-2CA5-DC8C95715C67">
+<Column name="A_Project_project_no" id="AC38CFEE-07A6-80D7-7D83-049514272806">
 <createdBy>ctlente</createdBy>
-<createdTime>2016-03-26 02:03:35 UTC</createdTime>
-<generatorID>4A9E1767-7703-9C2F-395D-780D38C265C1</generatorID>
+<createdTime>2016-03-28 01:48:03 UTC</createdTime>
+<generatorID>5DD1A2EE-67A1-1D53-75AB-0585B6AFED88</generatorID>
 <ownerDesignName>part1_logical_model</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -48,7 +48,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="58ED2DF8-BE03-6C50-0394-C3BF372A9557" referredColumn="89F20F60-F853-A37D-F3A3-1193263DA0D7"/>
+<colAssociation fkAssociation="58ED2DF8-BE03-6C50-0394-C3BF372A9557" referredColumn="97799A99-38D4-C426-4068-67F74B44CFE5"/>
 </associations>
 </Column>
 </columns>
@@ -84,7 +84,7 @@
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DF641FF9-9897-E9BA-2CA5-DC8C95715C67"/>
+<colUsage columnID="AC38CFEE-07A6-80D7-7D83-049514272806"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
