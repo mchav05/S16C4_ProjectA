@@ -29,16 +29,16 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="department_id" id="D9C0D605-E4DE-45DF-53AE-7754CFB98B88">
+<Attribute name="dept_no" id="9C5CAB4C-D959-4CE4-6726-040C0068E0D6">
 <createdBy>ctlente</createdBy>
-<createdTime>2016-03-26 03:25:40 UTC</createdTime>
+<createdTime>2016-03-28 01:08:46 UTC</createdTime>
 <generatorID>C14B223F-7F2E-E772-EFA7-0DB37694CC57</generatorID>
 <ownerDesignName>part1_conceptual_model</ownerDesignName>
 <engineerTo>
 <item key="8F500B81-7519-FA39-7D47-520872302636" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>ABD565C0-60FD-C23C-F15A-4E99E661D33F</referedAttribute>
+<referedAttribute>2881D295-36ED-E75F-EDD7-E7F66AECB08A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

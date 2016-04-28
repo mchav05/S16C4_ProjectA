@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="project_id" id="168ADD66-DF9D-F5FB-7466-DBC23105F3C0">
+<Attribute name="project_no" id="168ADD66-DF9D-F5FB-7466-DBC23105F3C0">
 <createdBy>ctlente</createdBy>
 <createdTime>2016-03-26 03:22:16 UTC</createdTime>
 <ownerDesignName>part1_conceptual_model</ownerDesignName>
@@ -27,27 +27,13 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="project_id_1" id="81A48825-F56D-C162-8C91-C62A1AFBBAFC">
+<Attribute name="project-title" id="2B172554-FFAF-6824-34CA-7D10F77D90C9">
 <createdBy>ctlente</createdBy>
 <createdTime>2016-03-26 03:22:25 UTC</createdTime>
 <ownerDesignName>part1_conceptual_model</ownerDesignName>
 <engineerTo>
 <item key="8F500B81-7519-FA39-7D47-520872302636" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="project_id_2" id="2B172554-FFAF-6824-34CA-7D10F77D90C9">
-<createdBy>ctlente</createdBy>
-<createdTime>2016-03-26 03:22:25 UTC</createdTime>
-<ownerDesignName>part1_conceptual_model</ownerDesignName>
-<engineerTo>
-<item key="8F500B81-7519-FA39-7D47-520872302636" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
@@ -69,7 +55,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="project_id1" id="F58F0D56-07E8-EBDF-173A-1A8A267C564F">
+<Attribute name="project_no1" id="F58F0D56-07E8-EBDF-173A-1A8A267C564F">
 <createdBy>ctlente</createdBy>
 <createdTime>2016-03-26 03:26:05 UTC</createdTime>
 <generatorID>E7824315-5F29-E2A2-CCB4-342C38A8F35D</generatorID>
@@ -84,16 +70,16 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="department_id" id="2E0A3B57-7D14-74CC-A94F-F5CB0E35CD1F">
+<Attribute name="dept_no" id="AC7D9AB6-AFC8-7B7F-2A1B-EDBCF1296002">
 <createdBy>ctlente</createdBy>
-<createdTime>2016-03-26 03:26:20 UTC</createdTime>
+<createdTime>2016-03-28 01:08:46 UTC</createdTime>
 <generatorID>3BD15C7F-65D5-FC56-2BB5-2F9577A062FF</generatorID>
 <ownerDesignName>part1_conceptual_model</ownerDesignName>
 <engineerTo>
 <item key="8F500B81-7519-FA39-7D47-520872302636" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>ABD565C0-60FD-C23C-F15A-4E99E661D33F</referedAttribute>
+<referedAttribute>2881D295-36ED-E75F-EDD7-E7F66AECB08A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
